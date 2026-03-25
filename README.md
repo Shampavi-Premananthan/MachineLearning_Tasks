@@ -1,37 +1,32 @@
 # Machine Learning Task 1
 
-This project prepares a telecom churn dataset for machine learning.
+Level 1, Task 2: Simple Linear Regression Model for house price prediction.
 
 ## Project Files
 
-- `preprocessing.py`: Main preprocessing pipeline.
-- `check_data.py`: Quick data inspection script.
-- `X_train.csv`, `X_test.csv`, `y_train.csv`, `y_test.csv`: Generated train/test outputs.
+- `preprocessing.py`: Main script for loading data, training linear regression, and evaluation.
+- `requirements.txt`: Dependency list.
+- `actual_vs_predicted.png`: Generated evaluation plot (created after run).
+- `model_summary.txt`: Generated metrics summary (created after run).
 
-## What the Preprocessing Does
+## Dataset
 
-1. Loads the churn dataset.
-2. Checks and handles missing values.
-3. Encodes categorical columns:
-   - `International plan` and `Voice mail plan` using label encoding.
-   - `Churn` converted to numeric (`False -> 0`, `True -> 1`).
-   - `State` encoded with label encoding.
-4. Scales features using `StandardScaler`.
-5. Splits into train/test sets (80/20).
-6. Saves processed files in the project root.
+The script uses:
+
+`Data Set For Task\4) house Prediction Data Set.csv`
 
 ## Requirements
 
 - Python 3.10+
-- Packages:
-  - pandas
-  - numpy
-  - scikit-learn
+- numpy
+- pandas
+- scikit-learn
+- matplotlib
 
-Install packages:
+Install dependencies from the project root:
 
 ```powershell
-pip install pandas numpy scikit-learn
+pip install -r requirements.txt
 ```
 
 ## Run
@@ -39,18 +34,12 @@ pip install pandas numpy scikit-learn
 From the project root:
 
 ```powershell
-python check_data.py
 python preprocessing.py
 ```
 
-## Dataset Path Note
+## Output
 
-Current scripts use an absolute Windows path:
+After a successful run, the script prints model metrics and creates:
 
-`d:\Softwareprojects\ML Task1\Data Set For Task\Churn Prdiction Data\churn-bigml-80.csv`
-
-If you run this project on another machine, update the path in both scripts to match your local dataset location.
-
-## Public Repository Note
-
-Raw datasets and local environment files are excluded using `.gitignore` to keep this public repository safe and lightweight.
+- `actual_vs_predicted.png`
+- `model_summary.txt`

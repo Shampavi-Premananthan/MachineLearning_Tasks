@@ -1,0 +1,8 @@
+LINEAR REGRESSION MODEL - HOUSE PRICE PREDICTION SUMMARY
+============================================================
+R-squared (Test): 0.6688
+MSE (Test): 24.2911
+RMSE (Test): 4.9286
+
+Features and Coefficients saved in script output.
+Plot saved as actual_vs_predicted.png
