@@ -1,0 +1,23 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# VS Code local settings
+.vscode/
+
+# Local env/secrets
+.env
+.env.*
+
+# Archives and large artifacts
+*.zip
+
+# Raw datasets (keep only processed train/test outputs in repo)
+Data Set For Task/
